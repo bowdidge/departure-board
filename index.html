@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>JavaScript/CSS3 Departure Board</title>
+<link rel="stylesheet" href="departure-board.css" />
+<style>
+/* Formatting for top title bar for departure board. */
+body {
+  background-color: black;
+}
+
+.title {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 40px;
+  display: inline-block;
+  margin: 20px;
+}
+
+/* Formatting for fastclock value. */
+#time {
+  width: 1030px;
+  margin: 40px;
+  font-weight: bold;
+  font-family: "Helvetica";
+  font-size: 72pt;
+  color: white;
+}
+
+/* Formatting for div with human interface controls. */
+.controls {
+  width: 800px;
+  padding: 10px;
+  margin: 50px;
+  border: solid 1px white;
+  background: darkGray;
+  font-family: "Helvetica";
+  font-size: 14pt;
+}
+</style>
+<script src="departure-board.js"></script>
+<script src="marketst.js"></script>
+</head>
+
+<body onload="Init()">
+<audio src="flap.wav" type="audio/wav" autoplay="1"></audio>
+<div class="title">
+<center>
+  Southern Pacific Railroad
+  <br>
+  San Jose Market St. Station
+</center>
+</div>
+<br>
+<center>
+<div id="departure_board"></div>
+</center>
+<br>
+<div>
+  <center>
+    <div id="time">12:00</div>
+  </center>
+</div>
+<center>
+  <div class="controls">
+    <input type='button' id ='stopClockButton' value='Stop Clock' onclick='javascript:StopClock();'></input>
+    <p style="width: 50%">
+    Press 1-9 to cause the nth train to move to its next state.
+    </p>
+1  </div>
+</center>
+</body>
+</html>

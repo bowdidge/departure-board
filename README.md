@@ -19,6 +19,8 @@ depart.  For visitors, I wanted them to have an understanding of the
 trains that the models represented, as well as a sense for the sheer
 number of trains passing through the station.
 
+Read more about the Market Street Station at the [Vasona Branch Blog](http://vasonabranch.blogspot.com/search/label/Market%20Street).
+
 ## To use
 
 Load the web page to start it.  The departure board shows at the top; the
